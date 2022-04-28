@@ -6,6 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Andres Nowak</title>
 		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<script src="index.js"></script>
 	</head>
 
 	<body>
@@ -20,49 +25,13 @@
 					<h1>Andres Nowak</h1>
 				</div>
 				<img
+					class="background-image"
 					loading="lazy"
 					src="images/helloworld.png"
 					alt="Hello world"
 				/>
 			</div>
-			<article>
-				<p>This is my first hello world github pages page.</p>
-			</article>
-			<div class="links">
-				<h2>Links to projects</h2>
-				<ul>
-					<li>
-						<p>
-							Project
-							<a
-								href="https://github.com/andresnowak/covid19_jetpackCompose"
-							>
-								Covid 19 jetpack compose
-							</a>
-						</p>
-					</li>
-					<li>
-						<p>
-							This is just a simple Pong game made with pygame
-							<a href="https://github.com/andresnowak/Pong">
-								Pong
-							</a>
-						</p>
-					</li>
-					<li>
-						<p>
-							This was one of my first gui programs a tic-tac-toe
-							made with python
-							<a
-								href="https://github.com/andresnowak/tic-tac-toe-py"
-							>
-								tic-tac-toe
-							</a>
-						</p>
-					</li>
-				</ul>
-			</div>
-			<button onclick="alert('Hello world')">Hello world</button>
+			<div class="links" id="links-wrapper"></div>
 		</main>
 	</body>
 </html>
