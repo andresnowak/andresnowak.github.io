@@ -42,8 +42,8 @@ window.onload = function () {
 		const targetElement = document.querySelector("#links-wrapper");
 
 		repos.forEach((repo) => {
-			getRepoInfo(repo[1]).then((posts) => {
-				const template = getTemplate(repo[0], posts, repo[1]);
+			getRepoInfo(repo[1]).then((repoData) => {
+				const template = getTemplate(repo[0], repoData, repo[1]);
 
 				targetElement.innerHTML += template;
 			});
