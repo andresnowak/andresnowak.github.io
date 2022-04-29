@@ -3,7 +3,7 @@ import { publish } from 'gh-pages';
 publish(
 	'build', // path to public directory
 	{
-		branch: 'main',
+		branch: 'gh-pages',
 		repo: 'https://github.com/andresnowak/andresnowak.github.io.git', // Update to point to your repository
 		user: {
 			name: 'Andres nowak', // update to use your name

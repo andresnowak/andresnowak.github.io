@@ -29,14 +29,12 @@
 
 		for (const repo of repos) {
 			const repoData = await getRepoInfo(repo[1]);
-			const repo_url = `${githubUrl}/${user}/${repos[1]}`;
+			const repo_url = `${githubUrl}/${user}/${repo[1]}`;
 			items.push([repo[0], repoData, repo_url]);
 		}
 
 		return items;
 	}
-
-	//$: loadData
 </script>
 
 <main>
@@ -60,75 +58,5 @@
 	</div>
 </main>
 
-<style>
-	main {
-		widows: 100%;
-		height: 100vh;
-		background-color: rgb(153, 153, 153);
-
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-
-		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	}
-
-	.wrapper {
-		width: 80%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.header {
-		width: 100%;
-		height: 300px;
-
-		position: relative;
-		text-align: center;
-		color: white;
-
-		padding: 1em;
-		margin-bottom: 1em;
-	}
-
-	.title {
-		height: 20%;
-		position: absolute;
-		bottom: 10px;
-		left: 32%;
-
-		display: flex;
-		align-items: center;
-	}
-
-	.logo {
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-	}
-
-	.title h1 {
-		margin: 1em;
-	}
-
-	.background-image {
-		width: 35%;
-		height: 100%;
-		border-radius: 10px;
-	}
-
-	.links {
-		width: 100%;
-		padding: 1em;
-		margin: 1em;
-
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-
-		overflow: auto;
-	}
+<style src="./index.css">
 </style>
