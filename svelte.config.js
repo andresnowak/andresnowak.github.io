@@ -18,7 +18,9 @@ const config = {
 
 	experimental: {
 		useVitePreprocess: true
-	}
+	},
+
+	target: '#svelte'
 };
 
 export default config;
