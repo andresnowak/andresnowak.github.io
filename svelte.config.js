@@ -13,6 +13,10 @@ const config = {
 			assets: 'build',
 			fallback: null
 		})
+	},
+
+	experimental: {
+		useVitePreprocess: true
 	}
 };
 
