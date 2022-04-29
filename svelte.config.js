@@ -9,6 +9,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
+		target: '#svelte',
 		adapter: adapterStatic({
 			pages: 'docs',
 			assets: 'docs',
@@ -18,9 +19,7 @@ const config = {
 
 	experimental: {
 		useVitePreprocess: true
-	},
-
-	target: '#svelte'
+	}
 };
 
 export default config;
