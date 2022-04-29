@@ -9,12 +9,15 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		target: '#svelte',
 		adapter: adapterStatic({
 			pages: 'docs',
 			assets: 'docs',
 			fallback: null
 		})
+	},
+
+	paths: {
+		base: '/andresnowak.github.io'
 	},
 
 	experimental: {
