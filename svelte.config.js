@@ -10,8 +10,8 @@ const config = {
 
 	kit: {
 		adapter: adapterStatic({
-			pages: 'build',
-			assets: 'build',
+			pages: 'docs',
+			assets: 'docs',
 			fallback: null
 		})
 	},
